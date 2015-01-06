@@ -1,4 +1,6 @@
-gas = input("Please enter the number of gallons of gasoline: ")
+gas = raw_input("Please enter the number of gallons of gasoline: ")
+while(not nu.isdigit()):
+        gas
 org_gas = int(gas)
 equiv = 3.7654
 barrel = 19.5
