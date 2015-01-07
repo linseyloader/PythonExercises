@@ -19,13 +19,13 @@ def main():
         print (org_gas), "gallons of gasoline is energy equivalent to", (co2), "gallons of ethanol"
         print (org_gas), "gallons of gasoline requires", (co2), "US dollars"
 
-        again = raw_input("Would you like to play again? Enter y/n: ")
+        again = raw_input("Would you like to calculate again? Enter y/n: ")
 
         if again == "n":
             print ("Thanks for Playing!")
             return
         elif again == "y":
-            print ("Lets play again..")
+            print ("Lets start over.")
         else:
             print ("You should enter either \"y\" or \"n\".")
 
