@@ -1,18 +1,24 @@
-nu = raw_input("Please enter the first integer: ")
-while not nu.isdigit() or nu == "0":
-    if nu == "0":
-        nu = raw_input("Cannot determine using 0. Try another number: ")
+integer_one = raw_input("Please enter the first integer: ")
+while not integer_one.isdigit():
+    integer_one = raw_input ("That is not a number. Try again: ")
+
+integer_two = raw_input("Please enter the second integer: ")
+while not integer_two.isdigit() or integer_two == "0":
+    if integer_two == "0":
+        integer_two = raw_input("Cannot determine using 0. Try another number: ")
     else:
-        nu = raw_input("That's not a number. Try again: ")
-nm = raw_input("Please enter the second integer: ")
-while not nm.isdigit() or nm == "0":
-    if nm == "0":
-        nm = raw_input("Cannot determine using 0. Try another number: ")
-    else:
-        nm = raw_input("That's not a number. Try again: ")
-nu_value = int(nu)
-nm_value = int(nm)
-print "The sum of", (nu_value), "and", (nm_value), "is:", (nu_value + nm_value)
-print "The difference of", (nu_value), "and", (nm_value), "is:", (nu_value - nm_value)
-print "The product", (nu_value), "and", (nm_value), "is:", (nu_value * nm_value)
-print "The quotient", (nu_value), "and", (nm_value), "is:", (nu_value / nm_value), "with remainder:", (nm_value % nu_value)
+        integer_two = raw_input("That's not a number. Try again: ")
+
+int_one = int(integer_one)
+int_two = int(integer_two)
+
+add = int_one + int_two
+subtract = int_one - int_two
+multiply = int_one ** int_two
+divide = int_one / int_two
+remainder = int_one % int_two
+
+print "The sum of %s and %s is: %s" % (int_one, int_two, add)
+print "The difference of %s and %s is: %s" % (int_one, int_two, subtract)
+print "The product %s and %s is: %s" % (int_one, int_two, multiply)
+print "The quotient %s and %s is: %s with remainder: %s" % (int_one, int_two, divide, remainder)
