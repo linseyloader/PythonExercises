@@ -3,7 +3,7 @@ from sys import exit
 
 def main():
     while True:
-        gas_amount = raw_input("Please enter the number of gallons of gasoline: ")
+        gas_amount = raw_input("\nPlease enter the number of gallons of gasoline: ")
         while not gas_amount.isdigit() or gas_amount == "0":
                 if gas_amount == "0":
                         gas_amount = raw_input("Cannot determine using 0. Try another number: ")
@@ -29,10 +29,10 @@ def main():
         again = raw_input("\nWould you like to calculate again? Enter yes or no: ")
 
         if again == "no":
-            print ("\nThanks for calculating! It's been mathematical!")
+            print ("\nThanks for calculating! It's been mathematical!\n")
             exit()
         elif again == "yes":
-            print ("\nTime to calculate again!")
+            print ("\nLets retry with a new amount.")
         else:
             raw_input("\nYou should enter either yes or no. Would you like to calculate again?: ")
 

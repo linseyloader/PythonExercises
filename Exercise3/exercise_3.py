@@ -3,7 +3,7 @@ from sys import exit
 
 def main():
     while True:
-        miles = raw_input("Please enter a speed in miles/hours: ")
+        miles = raw_input("\nPlease enter a speed in miles/hours: ")
         miles_org = int(miles)
 
         yards_mile = 1760
@@ -32,10 +32,10 @@ def main():
         again = raw_input("\nWould you like to determine using another number? Enter yes or no: ")
 
         if again == "no":
-            print ("\nThanks for Playing!")
+            print ("\nGoodbye.")
             exit()
         elif again == "yes":
-            print ("\nLets entering a number number.")
+            print ("\nLets retry with a new amount.")
         else:
             raw_input("\nYou should enter either yes or no. Try again: ")
 

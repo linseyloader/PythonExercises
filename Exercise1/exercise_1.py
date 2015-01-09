@@ -1,8 +1,8 @@
-integer_one = raw_input("Please enter the first integer: ")
+integer_one = raw_input("\nPlease enter the first integer: ")
 while not integer_one.isdigit():
-    integer_one = raw_input ("That is not a number. Try again: ")
+    integer_one = raw_input("That is not a number. Try again: ")
 
-integer_two = raw_input("Please enter the second integer: ")
+integer_two = raw_input("\nPlease enter the second integer: ")
 while not integer_two.isdigit() or integer_two == "0":
     if integer_two == "0":
         integer_two = raw_input("Cannot determine using 0. Try another number: ")
