@@ -1,1 +1,3 @@
-asdf
+Inserted text.
+This is an entry.
+This is a phrase.
