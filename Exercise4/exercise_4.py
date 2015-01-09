@@ -1,4 +1,5 @@
 from sys import exit
+
 ans = True
 while ans:
     print ("""
@@ -19,7 +20,7 @@ while ans:
             print line
         f.close()
     elif ans == "3":
-        print("\nGoodbye.")
+        print("\nGoodbye.\n")
         exit()
     else:
         print("\nNot an option, try again.")
