@@ -27,12 +27,12 @@ while ans:
     print "Converted to Mach number is:", (mach)
     print "Converted to the percentage of the speed of light is", (psl)
 
-    again = raw_input("\nWould you like to determine using another number? Enter yes or no: ")
+    ans = raw_input("\nWould you like to determine using another number? Enter yes or no: ")
 
-    if again == "no":
+    if ans == "no":
         print ("\nGoodbye.\n")
         exit()
-    elif again == "yes":
+    elif ans == "yes":
         print ("\nLets retry with a new amount.")
     else:
-        raw_input("\nYou should enter either yes or no. Try again: ")
+        print "You should have entered yes or no."

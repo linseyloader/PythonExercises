@@ -1,3 +1,5 @@
-Inserted text.
-This is an entry.
-This is a phrase.
+Inserted text:
+blah
+End of the line.
+Entered data.
+Additional phrase.

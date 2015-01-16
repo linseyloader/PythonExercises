@@ -7,7 +7,9 @@ while ans:
     2. Print previous phrases.
     3. Quit
     """)
+
     ans = raw_input("What would you like to do? ")
+
     if ans == "1":
         phrase_one = raw_input("Enter a phrase: ")
         f = open("file4.txt", "a")
